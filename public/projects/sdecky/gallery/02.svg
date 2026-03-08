@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Sdecky deck sample Y Combinator">
+  <rect width="1600" height="1000" fill="#f5f3ed"/>
+  <rect x="0" y="0" width="1600" height="130" fill="#ece8de"/>
+  <text x="140" y="85" fill="#ff7d1a" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Y</text>
+  <text x="230" y="85" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="42">Spring 2026</text>
+  <text x="140" y="250" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="84">Y Combinator:</text>
+  <text x="140" y="345" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="84">Requests for Startups</text>
+  <rect x="140" y="388" width="170" height="8" fill="#ff7d1a"/>
+  <text x="140" y="470" fill="#4b5563" font-family="Inter, Arial, sans-serif" font-size="46">The AI-Native Frontier: 10 Ideas We Want to Fund</text>
+  <text x="140" y="610" fill="#6b7280" font-family="Inter, Arial, sans-serif" font-size="28">
+    Source: ycombinator.com/rfs  ·  Made with Sdecky.ai
+  </text>
+</svg>

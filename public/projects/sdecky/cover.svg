@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Sdecky homepage cover">
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#010819"/>
+      <stop offset="55%" stop-color="#031634"/>
+      <stop offset="100%" stop-color="#04004e"/>
+    </linearGradient>
+    <linearGradient id="shape1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ca7c6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0f3f8e" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="shape2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#40d7c5" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2d61cc" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="shape3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#112f8d" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#04174a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="65%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#heroBg)"/>
+
+  <rect x="0" y="0" width="1600" height="68" fill="#f5f7fa"/>
+  <text x="90" y="44" fill="#12233a" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="600">
+    Sdecky
+  </text>
+
+  <path d="M430 68 L760 68 L520 320 L190 320 Z" fill="url(#shape1)"/>
+  <path d="M1000 68 L1330 68 L1090 330 L760 330 Z" fill="url(#shape2)"/>
+  <path d="M1210 68 L1600 68 L1335 360 L945 360 Z" fill="url(#shape3)"/>
+  <path d="M760 330 L1090 330 L850 590 L520 590 Z" fill="url(#shape3)"/>
+
+  <g text-anchor="middle">
+    <text
+      x="800"
+      y="470"
+      fill="#f8fafc"
+      font-family="Georgia, Times New Roman, serif"
+      font-size="84"
+      font-weight="500"
+      letter-spacing="-0.8"
+    >
+      Craft your story with excellence,
+    </text>
+    <text
+      x="800"
+      y="560"
+      fill="#f8fafc"
+      font-family="Georgia, Times New Roman, serif"
+      font-size="84"
+      font-weight="500"
+      letter-spacing="-0.8"
+    >
+      and the world will listen.
+    </text>
+    <text
+      x="800"
+      y="635"
+      fill="#c7d2e3"
+      font-family="Inter, Arial, sans-serif"
+      font-size="26"
+      font-style="italic"
+      opacity="0.8"
+    >
+      Sdecky, an AI agent that crafts slides refined by taste and storytelling.
+    </text>
+    <text
+      x="800"
+      y="835"
+      fill="#c7d2e3"
+      font-family="Inter, Arial, sans-serif"
+      font-size="28"
+      opacity="0.7"
+    >
+      See what's possible
+    </text>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>

@@ -1,0 +1,97 @@
+---
+title: "MCP: Breaking Data Silos, the AI Type-C"
+publishedAt: "2025-12-29"
+author: "Alfred"
+summary: "Why Model Context Protocol matters: a practical explanation of how MCP standardizes access between LLMs, tools, and external systems."
+image: "/blog/mcp-type-c/images/img_1601790e_1.png"
+---
+
+# MCP: Breaking Data Silos, the AI Type-C
+
+# In One Line
+
+Model Context Protocol (MCP) is an open standard for connecting large language models to external data sources, tools, and services. I think of it as the Type-C port of the AI world: a universal adapter that lets models talk to many different systems through one common interface. With MCP, an LLM can query data or trigger actions across multiple systems without every integration becoming a one-off engineering project.
+
+![](/blog/mcp-type-c/images/img_1601790e_1.png)
+
+# Open Standards: The Common Language of Technology
+
+Open standards are the common language of modern technology. They are shared rules that allow different devices, services, and systems to cooperate.
+
+Take a simple example. If I send a photo from an Android phone to a friend using an iPhone, the image still opens because both devices understand formats like JPEG and PNG. Or think about charging: an Android phone and a laptop from different brands can both use the same Type-C cable because they follow the same interface standard.
+
+That is the intuition behind MCP. It aims to do for AI integrations what Type-C did for hardware ports: replace a mess of incompatible connectors with one widely accepted interface.
+
+# Why AI Has a Data Silo Problem
+
+AI assistants are improving fast, but even the best models hit the same bottleneck: they are trapped behind disconnected systems.
+
+A data silo is what happens when information lives in different products and every product has its own access model, auth flow, and interface. The moment you want one assistant to read GitHub, query a database, search Slack, and fetch Google Docs, the integration burden becomes obvious.
+
+Without MCP, this turns into a classic engineering nightmare:
+
+- every data source needs its own integration
+- every auth model must be wired separately
+- every change duplicates work across multiple parts of the stack
+- every additional connector increases security and maintenance complexity
+
+That is why MCP matters. It is not just another protocol. It is an attempt to eliminate integration fragmentation at the infrastructure level.
+
+![](https://media4.giphy.com/media/zOvBKUUEERdNm/giphy.gif?cid=7941fdc6gz5n1o2ahqir4t5sin0nvlu8dft5ln6ia0seubwx&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+# What MCP Actually Is
+
+MCP is an open standard that defines a common way for AI systems to access resources and capabilities from external systems.
+
+At a high level, MCP uses a **host-client-server** structure:
+
+- **Host**: the application that wants to use external capabilities, such as Claude Desktop, an IDE, or another AI tool
+- **Client**: the MCP-aware component inside that application that sends requests
+- **Server**: a lightweight program that exposes specific capabilities and connects to local or remote resources
+
+With this architecture, the AI application no longer needs to understand the implementation details of every underlying data source. It only needs to speak the standard protocol.
+
+![](/blog/mcp-type-c/images/img_1601790e_2.png)
+
+# How MCP Breaks Information Isolation
+
+MCP helps in four concrete ways:
+
+1. **A unified protocol**  
+   Every data source no longer requires a custom integration path. If a tool or system speaks MCP, it becomes accessible through the same interaction model.
+
+2. **Simpler access to external systems**  
+   Instead of rebuilding connectors again and again, developers can plug new systems into a standard interface and move faster.
+
+3. **Better security boundaries**  
+   MCP is designed with authorization and controlled access in mind, so the application interacts through explicit, governed interfaces instead of ad hoc backdoors.
+
+4. **Flexible extensibility**  
+   The same pattern works across local databases, internal tools, and cloud services. Small teams and large enterprises can both use the same abstraction.
+
+![](/blog/mcp-type-c/images/img_1601790e_3.png)
+
+Here is a simple mental model of the flow:
+
+1. **Initialize the connection**  
+   Claude Desktop or another host application connects to an MCP server.
+
+2. **Negotiate capabilities**  
+   The server responds with the operations and resources it supports.
+
+3. **Send a request**  
+   The host asks for a query or an action.
+
+4. **Access the backend system**  
+   The MCP server translates that request into the necessary backend operation, for example a SQL query against SQLite.
+
+5. **Return the result**  
+   The backend sends the result to the MCP server.
+
+6. **Format the output**  
+   The MCP server turns the raw result into something the host can consume safely and consistently.
+
+7. **Deliver it back to the user-facing application**  
+   The host receives the structured result and can show it to the user or pass it back into the model loop.
+
+In that sense, MCP acts as the middle layer between an AI application and the underlying systems it wants to use. It standardizes capability discovery, query execution, and secure data exchange. The result is a stack that is more composable, more maintainable, and much easier to scale.

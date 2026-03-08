@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Sdecky deck sample AI investment">
+  <rect width="1600" height="1000" fill="#f8fafc"/>
+  <g stroke="#e5e7eb" stroke-width="1">
+    <path d="M0 80h1600M0 160h1600M0 240h1600M0 320h1600M0 400h1600M0 480h1600M0 560h1600M0 640h1600M0 720h1600M0 800h1600M0 880h1600"/>
+    <path d="M80 0v1000M160 0v1000M240 0v1000M320 0v1000M400 0v1000M480 0v1000M560 0v1000M640 0v1000M720 0v1000M800 0v1000M880 0v1000M960 0v1000M1040 0v1000M1120 0v1000M1200 0v1000M1280 0v1000M1360 0v1000M1440 0v1000M1520 0v1000"/>
+  </g>
+  <path d="M1330 0c-42 110-128 175-238 230" fill="none" stroke="#a5b4fc" stroke-width="3"/>
+  <path d="M1600 0c-85 225-261 342-484 443" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+
+  <text x="110" y="225" fill="#0f2746" font-family="Georgia, Times New Roman, serif" font-size="74">A16Z AI应用投资新范式：</text>
+  <text x="110" y="320" fill="#0f2746" font-family="Georgia, Times New Roman, serif" font-size="74">The AI Opportunity that goes</text>
+  <text x="110" y="415" fill="#0f2746" font-family="Georgia, Times New Roman, serif" font-size="74">beyond Models</text>
+  <line x1="110" y1="560" x2="1490" y2="560" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="110" y="680" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="62">AI6Z AI投资新范式</text>
+  <text x="110" y="760" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="36">
+    Structured thesis, evidence-backed insights, and decision-ready narrative.
+  </text>
+  <text x="1260" y="600" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="26">2026.01</text>
+</svg>
