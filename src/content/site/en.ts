@@ -17,9 +17,9 @@ export const siteDataEn: ResumeBaseData = {
       href: "https://sdecky.ai/",
       badges: [],
       location: "Taiwan",
-      title: "Founder",
+      title: "Founder & Agent Engineer",
       logoUrl: "/logos/sdecky.svg",
-      start: "2026",
+      start: "2025.12",
       end: "Present",
       description:
         "Built Sdecky from 0 to 1 by engineering a consulting-style presentation workflow into an AI agent, with focus on agent eval and context engineering.",
@@ -31,8 +31,8 @@ export const siteDataEn: ResumeBaseData = {
       location: "China",
       title: "Product & Agent",
       logoUrl: "/logos/manus-glyph-black.png",
-      start: "2025",
-      end: "2026",
+      start: "2025.03",
+      end: "2025.09",
       description:
         "Led user research, scenario definition, feature execution, and AI performance optimization; built and implemented agent evals to systematically improve product capability and reliability.",
     },
