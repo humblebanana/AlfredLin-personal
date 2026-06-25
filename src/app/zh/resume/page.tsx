@@ -1,7 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Download } from "lucide-react";
+import { Download, ChevronLeft } from "lucide-react";
 import dynamic from "next/dynamic";
 
 const PdfViewer = dynamic(() => import("@/components/pdf-viewer"), {
@@ -28,7 +28,16 @@ export default function ZhResumePage() {
   return (
     <section id="resume">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <div className="flex items-center justify-between mb-6">
+        {/* Back to home */}
+        <Link
+          href="/zh"
+          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
+        >
+          <ChevronLeft className="size-4" />
+          返回首页
+        </Link>
+
+        <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-semibold tracking-tight">简历</h1>
           <Link
             href="/resume.pdf"
@@ -43,7 +52,7 @@ export default function ZhResumePage() {
       </BlurFade>
 
       <BlurFade delay={BLUR_FADE_DELAY * 2}>
-        <div className="w-full rounded-xl overflow-hidden border border-border shadow-sm">
+        <div className="w-full rounded-xl overflow-hidden border border-border shadow-sm dark:[&_canvas]:invert dark:[&_canvas]:brightness-90">
           <PdfViewer url="/resume.pdf" />
         </div>
       </BlurFade>
