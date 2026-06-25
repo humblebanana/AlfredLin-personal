@@ -26,18 +26,19 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function ZhResumePage() {
   return (
-    <section id="resume">
+    <section id="resume" className="flex flex-col gap-4">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        {/* Back to home */}
         <Link
           href="/zh"
-          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
+          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ChevronLeft className="size-4" />
           返回首页
         </Link>
+      </BlurFade>
 
-        <div className="flex items-center justify-between mb-4">
+      <BlurFade delay={BLUR_FADE_DELAY * 2}>
+        <div className="flex items-center justify-between">
           <h1 className="text-2xl font-semibold tracking-tight">简历</h1>
           <Link
             href="/resume.pdf"
@@ -51,7 +52,7 @@ export default function ZhResumePage() {
         </div>
       </BlurFade>
 
-      <BlurFade delay={BLUR_FADE_DELAY * 2}>
+      <BlurFade delay={BLUR_FADE_DELAY * 3}>
         <div className="w-full rounded-xl overflow-hidden border border-border shadow-sm dark:[&_canvas]:invert dark:[&_canvas]:brightness-90">
           <PdfViewer url="/resume.pdf" />
         </div>
