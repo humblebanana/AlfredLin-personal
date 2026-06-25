@@ -17,7 +17,7 @@ type SharedSiteFields = Pick<
 export const sharedSiteData: SharedSiteFields = {
   name: "Alfred Lin",
   initials: "AL",
-  url: "https://humbleguava.top",
+  url: "https://alfredlin.one",
   location: "Taipei, Taiwan",
   locationLink: "https://www.google.com/maps/place/Taipei",
   avatarUrl: "/guava.jpg",
