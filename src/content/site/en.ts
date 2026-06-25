@@ -6,7 +6,7 @@ export const siteDataEn: ResumeBaseData = {
   ...sharedSiteData,
   description:
     "AI product and Agent practitioner focused on the system-level collaboration between technology, product, and business.",
-  summary: `I'm Alfred, from Taipei, Taiwan. I study Law and Computer Science at Tsinghua, focused on agent products and systems engineering.\n\nAt Manus, I worked on Product & Agent across user research, scenario definition, and capability iteration, pushing systems toward reliable delivery.\n\nMy specialization is agent eval, agent system design, and context engineering, with an emphasis on building evaluable and shippable systems.\n\nMy guiding word is Emancipate: let systems absorb repetitive work, so people can focus on judgment and creation.`,
+  summary: `I'm Alfred, from Taipei, Taiwan. I study Law and Computer Science at Tsinghua, focused on agent harness engineering.\n\nAt Manus, I worked on Product & Agent — specifically on evaluation and optimization, pushing agent systems from "works sometimes" toward reliable, shippable delivery.\n\nMy specialization is agent eval, harness engineering, and product management.\n\nMy guiding word is Emancipate: let systems absorb repetitive work, so people can focus on judgment and creation.`,
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },

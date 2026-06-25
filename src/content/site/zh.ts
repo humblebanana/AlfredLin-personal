@@ -5,7 +5,7 @@ import type { ResumeBaseData } from "@/data/resume-types";
 export const siteDataZh: ResumeBaseData = {
   ...sharedSiteData,
   description: "AI 产品与 Agent 方向实践者，关注技术、产品与商业的系统协同。",
-  summary: `我叫 Alfred，来自台湾台北，目前在清华学习法律与计算机，长期专注 Agent 产品与系统工程。\n\n我在 Manus 做 Product & Agent，主要围绕用户研究、场景定义与能力迭代，把系统从“能用”推进到“稳定可交付”。\n\n我的专业方向是 Agent Eval、Agent System Design 和 Context Engineering，关注可评估、可迭代、可落地的工程化路径。\n\n我的关键词是 Emancipate：把重复劳动交给系统，把人的时间还给判断与创造。`,
+  summary: `我叫 Alfred，来自台湾台北，目前在清华学习法律与计算机，长期专注 Agent Harness Engineering。\n\n我在 Manus 做 Product & Agent，专注于评估与优化，把 Agent 系统从"偶尔能用"推进到"稳定可交付"。\n\n我的专业方向是 Agent Eval、Harness Engineering 与产品管理。\n\n我的关键词是 Emancipate：把重复劳动交给系统，把人的时间还给判断与创造。`,
   navbar: [
     { href: "/", icon: HomeIcon, label: "主页" },
     { href: "/blog", icon: NotebookIcon, label: "博客" },
