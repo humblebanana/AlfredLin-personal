@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import HtmlLang from "@/components/html-lang";
+import MouseGlow from "@/components/mouse-glow";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA_EN } from "@/data/resume";
@@ -76,6 +77,7 @@ export default function RootLayout({
       >
         <HtmlLang lang="en-US" />
         <ThemeProvider attribute="class" defaultTheme="light">
+          <MouseGlow />
           <TooltipProvider delayDuration={0}>
             <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
               <FlickeringGrid

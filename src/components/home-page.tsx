@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import TypingText from "@/components/typing-text";
 import PrincipleSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import BlogHighlightsSection from "@/components/section/blog-highlights-section";
@@ -79,9 +80,9 @@ export default function HomePage({ data, locale }: HomePageProps) {
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
             <h2 className="text-xl font-bold">{text.about}</h2>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <BlurFade delay={BLUR_FADE_DELAY * 4} inView>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <Markdown>{data.summary}</Markdown>
+              <TypingText text={data.summary} className="whitespace-pre-wrap" />
             </div>
           </BlurFade>
         </div>
@@ -90,10 +91,10 @@ export default function HomePage({ data, locale }: HomePageProps) {
       {data.work.length > 0 && (
         <section id="work">
           <div className="flex min-h-0 flex-col gap-y-6">
-            <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <BlurFade delay={BLUR_FADE_DELAY * 5} inView>
               <h2 className="text-xl font-bold">{text.work}</h2>
             </BlurFade>
-            <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <BlurFade delay={BLUR_FADE_DELAY * 6} inView>
               <WorkSection work={data.work} presentLabel={text.present} />
             </BlurFade>
           </div>
@@ -103,7 +104,7 @@ export default function HomePage({ data, locale }: HomePageProps) {
       {data.education.length > 0 && (
         <section id="education">
           <div className="flex min-h-0 flex-col gap-y-6">
-            <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <BlurFade delay={BLUR_FADE_DELAY * 7} inView>
               <h2 className="text-xl font-bold">{text.education}</h2>
             </BlurFade>
             <div className="flex flex-col gap-8">
@@ -156,7 +157,7 @@ export default function HomePage({ data, locale }: HomePageProps) {
 
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <BlurFade delay={BLUR_FADE_DELAY * 9} inView>
             <h2 className="text-xl font-bold">{text.skills}</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
@@ -177,13 +178,13 @@ export default function HomePage({ data, locale }: HomePageProps) {
       </section>
 
       <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <BlurFade delay={BLUR_FADE_DELAY * 11} inView>
           <ProjectsSection projects={data.projects} locale={locale} />
         </BlurFade>
       </section>
 
       <section id="blog">
-        <BlurFade delay={BLUR_FADE_DELAY * 12}>
+        <BlurFade delay={BLUR_FADE_DELAY * 12} inView>
           <BlogHighlightsSection locale={locale} />
         </BlurFade>
       </section>
@@ -197,7 +198,7 @@ export default function HomePage({ data, locale }: HomePageProps) {
       )}
 
       <section id="principle">
-        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+        <BlurFade delay={BLUR_FADE_DELAY * 16} inView>
           <PrincipleSection contact={data.contact} locale={locale} />
         </BlurFade>
       </section>
