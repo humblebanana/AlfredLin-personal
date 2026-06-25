@@ -2,6 +2,16 @@ import BlurFade from "@/components/magicui/blur-fade";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Download } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const PdfViewer = dynamic(() => import("@/components/pdf-viewer"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center py-24 text-muted-foreground text-sm">
+      加载中...
+    </div>
+  ),
+});
 
 export const metadata: Metadata = {
   title: "简历 — Alfred Lin",
@@ -34,12 +44,7 @@ export default function ZhResumePage() {
 
       <BlurFade delay={BLUR_FADE_DELAY * 2}>
         <div className="w-full rounded-xl overflow-hidden border border-border shadow-sm">
-          <iframe
-            src="/resume.pdf"
-            className="w-full border-0"
-            style={{ height: "calc(100vh - 200px)", minHeight: "600px" }}
-            title="Alfred Lin 简历"
-          />
+          <PdfViewer url="/resume.pdf" />
         </div>
       </BlurFade>
     </section>
