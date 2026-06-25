@@ -18,10 +18,10 @@ export const siteDataZh: ResumeBaseData = {
       location: "Taiwan",
       title: "Founder",
       logoUrl: "/logos/sdecky.svg",
-      start: "2026.03",
+      start: "2026",
       end: "至今",
       description:
-        "主导 Sdecky 从 0 到 1 的产品构建：将咨询顾问工作流工程化，通过 Agent Eval、Agent System Design 与 Context Engineering，交付咨询级演示方案生成体验。",
+        "主导 Sdecky 从 0 到 1 的产品构建：将咨询顾问工作流工程化，通过 Agent Eval 与 Context Engineering，交付咨询级演示方案生成体验。",
     },
     {
       company: "Manus AI",
@@ -30,10 +30,22 @@ export const siteDataZh: ResumeBaseData = {
       location: "China",
       title: "Product & Agent",
       logoUrl: "/logos/manus-glyph-black.png",
-      start: "2025.03",
-      end: "至今",
+      start: "2025",
+      end: "2026",
       description:
         "负责用户研究、关键应用场景定义、功能开发推进与 AI 性能优化，并搭建和实施 Agent Evals，系统化评估与提升能力表现。",
+    },
+    {
+      company: "京东集团",
+      href: "#",
+      badges: [],
+      location: "China",
+      title: "AI Agent 产品经理",
+      logoUrl: "/logos/jd.png",
+      start: "2025",
+      end: "2025",
+      description:
+        "负责电商导购场景下多智能体系统的产品设计与迭代：主导 Master Agent 调度节点重构，推动 Prompt Engineering 方案替代微调路线，调度错误率下降 38%；搭建多轮对话评测体系，量化证实多轮对话对 Session 转化率提升 119%。",
     },
     {
       company: "Aiyu Intelligent Technology",
@@ -42,8 +54,8 @@ export const siteDataZh: ResumeBaseData = {
       location: "China",
       title: "AI Product Engineer",
       logoUrl: "/logos/aiyu.jpg",
-      start: "2023.11",
-      end: "2024.04",
+      start: "2023",
+      end: "2024",
       description:
         "在金融科技场景参与内部创新项目，围绕不良资产管理构建生成式 AI Agent 产品方案，覆盖需求分析、方案设计与落地验证。",
     },

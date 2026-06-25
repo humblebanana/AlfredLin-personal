@@ -19,10 +19,10 @@ export const siteDataEn: ResumeBaseData = {
       location: "Taiwan",
       title: "Founder",
       logoUrl: "/logos/sdecky.svg",
-      start: "Mar 2026",
+      start: "2026",
       end: "Present",
       description:
-        "Built Sdecky from 0 to 1 by engineering a consulting-style presentation workflow into an AI agent, with strong focus on agent eval, agent system design, and context engineering.",
+        "Built Sdecky from 0 to 1 by engineering a consulting-style presentation workflow into an AI agent, with focus on agent eval and context engineering.",
     },
     {
       company: "Manus AI",
@@ -31,10 +31,22 @@ export const siteDataEn: ResumeBaseData = {
       location: "China",
       title: "Product & Agent",
       logoUrl: "/logos/manus-glyph-black.png",
-      start: "Mar 2025",
-      end: "Present",
+      start: "2025",
+      end: "2026",
       description:
         "Led user research, scenario definition, feature execution, and AI performance optimization; built and implemented agent evals to systematically improve product capability and reliability.",
+    },
+    {
+      company: "JD.com",
+      href: "#",
+      badges: [],
+      location: "China",
+      title: "AI Agent Product Manager",
+      logoUrl: "/logos/jd.png",
+      start: "2025",
+      end: "2025",
+      description:
+        "Designed and iterated on a multi-agent system for e-commerce shopping assistance: led Master Agent scheduling node redesign, driving a 38% drop in dispatch errors via prompt engineering over fine-tuning; built a multi-turn dialogue eval framework and quantified a 119% lift in session conversion rate.",
     },
     {
       company: "Aiyu Intelligent Technology",
@@ -43,8 +55,8 @@ export const siteDataEn: ResumeBaseData = {
       location: "China",
       title: "AI Product Engineer",
       logoUrl: "/logos/aiyu.jpg",
-      start: "Nov 2023",
-      end: "Apr 2024",
+      start: "2023",
+      end: "2024",
       description:
         "Worked on an internal FinTech innovation initiative to build a GenAI-powered agent solution for non-performing asset (NPA) management, from product definition to validation.",
     },
