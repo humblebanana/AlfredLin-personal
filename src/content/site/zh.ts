@@ -40,7 +40,7 @@ export const siteDataZh: ResumeBaseData = {
       href: "#",
       badges: [],
       location: "China",
-      title: "AI Agent 产品经理",
+      title: "AI Product Engineer",
       logoUrl: "/logos/jd.png",
       start: "2025",
       end: "2025",

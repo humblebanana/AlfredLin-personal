@@ -41,7 +41,7 @@ export const siteDataEn: ResumeBaseData = {
       href: "#",
       badges: [],
       location: "China",
-      title: "AI Agent Product Manager",
+      title: "AI Product Engineer",
       logoUrl: "/logos/jd.png",
       start: "2025",
       end: "2025",
