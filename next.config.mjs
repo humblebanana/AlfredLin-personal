@@ -33,6 +33,20 @@ const nextConfig = {
           },
         ],
       },
+      {
+        // Allow the PDF to be embedded in an iframe on the same origin
+        source: "/resume.pdf",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
+          },
+          {
+            key: "Content-Disposition",
+            value: "inline",
+          },
+        ],
+      },
     ];
   },
 };
